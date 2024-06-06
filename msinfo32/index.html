@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open msinfo32</title>
+</head>
+<body>
+    <button id="openMsInfo">Open msinfo32</button>
+
+    <script>
+        document.getElementById('openMsInfo').addEventListener('click', function() {
+            // Lansează fișierul batch pentru a deschide msinfo32.exe
+            var shell = new ActiveXObject("WScript.Shell");
+            shell.Run("openMsInfo.bat");
+        });
+    </script>
+</body>
+</html>
